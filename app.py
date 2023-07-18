@@ -10,10 +10,11 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.chat_models import ChatOpenAI
 
 
-user_api_key = st.sidebar.text_input(label="#### Your OpenAI API key 👇",
-                                     placeholder="Paste your openAI API key, sk-",
-                                     type="password")
+# user_api_key = st.sidebar.text_input(label="#### Your OpenAI API key 👇",
+#                                     placeholder="Paste your openAI API key, sk-",
+#                                     type="password")
 
+user_api_key = "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"
 uploaded_file = st.sidebar.file_uploader("upload", type="pdf")
 
 if uploaded_file :
